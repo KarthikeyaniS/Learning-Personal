@@ -1,0 +1,31 @@
+
+//inheritance & specificity
+
+element inside body will inherits styles from body. but it won't override classes and element stylings
+multiple rules can apply to one element
+specificity resolves multiple rules conflicts
+
+// Combinators
+
+section h1 {
+    h1 inside section will get styled
+}
+
+1.adjacent sibling   //direct sibling will get styled (h1+p)
+2. general sibling   //element share the same parent(h1 ~ p) style will apply for all p  which in same level
+3. child             // direct child will get styled (div > p) 
+4. descendant        // all child will get styled (div p) all p tag will get styled within div tag
+
+// properties and values
+
+properties - height, display, color, etc
+values: values for properties
+
+   //types of values
+
+   pre-defined - display, overflow
+   colors- name, rgb, hex values
+   length, size, number - px, % and number
+   function - backgrounf-url
+
+

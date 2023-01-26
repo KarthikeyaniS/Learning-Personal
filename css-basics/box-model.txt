@@ -1,0 +1,53 @@
+
+// box model
+
+element < padding < border < margin 
+
+default margin will apply to body - margin:0 have to mention if we dont want
+
+margin collapsing - bigger margin wins
+    
+    ** either use margin-bottm ot margin-top  (best practice)
+
+    // shorthand properties
+
+    border: 2px dashed orange (order wont be affect the style)
+            width style color
+
+    margin: 5px 10px 5px 10px  (clock wise)
+           top right bottom left 
+    margin: 10px 5px
+            t&b l&r
+    
+    **  border-box; -> without this element will take extra space for padding border and margin
+        while using box-sizing we can avoid the extra space . with that element width style will get adjust
+
+// display
+
+values : block  (takes whole line)
+         inline (ex:span space will taken according to size of content inside the inline element)
+                 height, width,margin-top  and margin-bottom  have no effect on the element.
+                ex: <a> , <span> , <img> 
+         inline-block (same like inline but it will take height and width for element)
+
+
+  visibility: hidden
+
+  width:calc(100% - 60px) it will subtract 60px from 100%
+
+  to remove the list style we have do it inside the a tag
+
+
+  // pseudo class and pseudo elements
+
+  pseudo class: defines the styles of a special state of an element
+                ex: hover, active (it will define by : classname )
+    element: defines the style of special element (::element name)
+                ex: after, before, first letter, etc...
+
+    
+
+
+
+
+    

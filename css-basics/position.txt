@@ -1,0 +1,31 @@
+  // position
+
+   static       -> default position of element
+   absolute      
+   relative     
+   fixed       -> position of the element depends on viewport      
+   sticky        
+
+   Document flow -> top, right, bottom, left
+
+
+   //background images
+
+   bg-size : cover(fit into screen); contain;
+   bg-position: 0%; full image will visible(there is no crop)
+   bg-origin: border-box;
+   bg-clip: border-box;       // origin and clip both are same
+  bg-attachment --> img will scroll or fixed according to the condition
+
+
+  image size is relative to the container size only when it is a inline block element (height:100% img ; height/width:22px container element)
+
+  vertical align : top ; to fit the image into the container without any white space
+
+  // background-image: linear-gradient(to bottom/left/tight red, blue, transprant)
+                    radial-gradient(colors)  --> shape of color is elipse
+                    radial-gradient(circle colors)
+
+// filter property
+
+ -->

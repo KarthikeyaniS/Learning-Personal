@@ -1,0 +1,11 @@
+
+// specificity inheritance
+
+ ! important
+ :not(selector tag ex:p )  -> except p tag, style should apply for all
+
+ vertical align: top --> it will make all text in same level 
+
+ margin auto will equally give space to elements horizontally
+
+ // clear: both -> any element comes after this wont affect the other elements

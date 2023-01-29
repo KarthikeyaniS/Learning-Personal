@@ -24,11 +24,11 @@ margin collapsing - bigger margin wins
 
 // display
 
-values : block  (takes whole line)
-         inline (ex:span space will taken according to size of content inside the inline element)
+values : * block  (takes whole line)
+         * inline (ex:span space will taken according to size of content inside the inline element)
                  height, width,margin-top  and margin-bottom  have no effect on the element.
                 ex: <a> , <span> , <img> 
-         inline-block (same like inline but it will take height and width for element)
+         * inline-block (same like inline but it will take height and width for element)
 
 
   visibility: hidden
@@ -40,10 +40,10 @@ values : block  (takes whole line)
 
   // pseudo class and pseudo elements
 
-  pseudo class: defines the styles of a special state of an element
-                ex: hover, active (it will define by : classname )
-    element: defines the style of special element (::element name)
-                ex: after, before, first letter, etc...
+  * pseudo class: defines the styles of a special state of an element
+                    ex: hover, active (it will define by : classname )
+  * pseudo element: defines the style of special element (::element name)
+                    ex: after, before, first letter, etc...
 
     
 

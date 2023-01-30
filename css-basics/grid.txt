@@ -1,0 +1,27 @@
+// Grid
+
+grid-template-rows: 100px 10% 1fr; fr- fraction
+grid-template-column: repear(1fr, 4) -> 4 column with 1fraction size
+
+
+grid-row-start
+grid-row-end
+
+grid-column: 1 / -1            (same for row)
+            start ends
+
+     grid-area: row-start / column-start / row-end / column-end
+    grid-column-gap/ grid-row-gap: value;
+    grid-gap: row col / combiantion with one value; 10px 20px / 10px (each)
+
+--in main
+    grid-template-area: "header header header"
+                        "aside main main"
+                        "footer footer footer"
+--in grid element
+   grid-area: header/aside/main/footer
+
+   grid-auto-flow
+   grid-auto-row
+   grid-auto-column
+    

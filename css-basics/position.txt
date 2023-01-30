@@ -28,4 +28,6 @@
 
 // filter property
 
- -->
+ --> fill and stroke properties 
+     fill mainly used in svg images for color filling
+     stoke is for margin color

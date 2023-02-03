@@ -1,0 +1,29 @@
+
+
+
+
+// TAGS
+
+     if the resource is used in organization without a tag some conflict will happen.
+    we r using tags to  know
+       how and where the resource used
+       how do we allocate the charges to the right team
+       how to save money
+       who used that resourve 
+
+    tags will contain key and value
+      key = value
+      name = ui-team
+
+    --> tags can make it easier to manage, search for, and filter resources
+        we can build reports from tags using programmatic way
+
+// untagged cost  - it will cost the owner the tag(organization won't know if they r using that account for org or their personal purpose)
+
+         *** tagging stratergies
+                    for,
+                         cost allocation
+                          access management
+                          automation
+                          console dashboard
+        

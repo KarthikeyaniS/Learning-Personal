@@ -1,0 +1,22 @@
+<div class="width:50%;">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">name</th>
+                <th scope="col">email</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let i of stuData">
+                <td>{{i.id}}</td>
+                <td>{{i.name}}</td>
+                <td>{{i.email}}</td>
+                <td><button (click)="delStudent(i.id)" >delete</button></td>
+                <td><span routerLink="/edit/{{i.id}}">edit</span></td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>

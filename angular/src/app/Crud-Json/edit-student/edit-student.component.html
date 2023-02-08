@@ -1,0 +1,19 @@
+<form class="mx-5" [formGroup]="editStudent" (ngSubmit)="updateData()">
+
+    <div *ngIf="alert" class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Holy guacamole!</strong> profile updated
+        <button type="button" (click)="close()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="mb-3">
+        <label>Name</label>
+        <input type="text" class="form-control" placeholder="Enter name" formControlName="name">
+    </div>
+    <div class="mb-3">
+        <label>Email</label>
+        <input type="email" class="form-control" placeholder="Enter email" formControlName="email">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

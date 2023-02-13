@@ -1,24 +1,17 @@
 {
   "students": [
     {
-      "id": 1,
-      "name": "ram",
-      "email": "ram@123"
+      "id": 1
     },
     {
-      "name": "priya",
-      "email": "priya@1234",
-      "id": 3
+      "id": 2,
+      "name": "jkwgjqh",
+      "email": "agdsd"
     },
     {
-      "name": "devilkk",
-      "email": "D@123",
-      "id": 4
-    },
-    {
-      "name": "karthi",
-      "email": "karthi@123",
-      "id": 5
+      "id": 3,
+      "name": "qwsdcwsdc",
+      "email": "sdxc"
     }
   ]
 }

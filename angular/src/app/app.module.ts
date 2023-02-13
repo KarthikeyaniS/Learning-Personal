@@ -10,7 +10,10 @@ import { EditStudentComponent } from './Crud-Json/edit-student/edit-student.comp
 import { ListStudentComponent } from './Crud-Json/list-student/list-student.component';
 import {  HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import { ReactiveFormsModule} from '@angular/forms'
+import { ReactiveFormsModule} from '@angular/forms';
+import { TreeViewComponent } from './dummy/tree-view/tree-view.component';
+import { TreeNodeComponent } from './dummy/tree-node/tree-node.component';
+import { NavHeadComponent } from './Crud-Json/nav-head/nav-head.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +21,10 @@ import { ReactiveFormsModule} from '@angular/forms'
     StudentDataComponent,
     AddStudentComponent,
     EditStudentComponent,
-    ListStudentComponent
+    ListStudentComponent,
+    TreeViewComponent,
+    TreeNodeComponent,
+    NavHeadComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,15 @@
+<div class="tree-view" *ngFor="let i of treeData">
+    <!-- <tree-node *ngFor="let node of treeData"></tree-node> -->
+
+    <div class="node">
+        <input type="checkbox">
+        <label>{{i.name}}</label>
+        <div *ngIf="i.children && i.children.length">
+            <div *ngFor="let child of i.children">
+                <input type="checkbox">
+                <label>{{child.name}}</label>
+            </div>
+        </div>
+    </div>
+
+</div>

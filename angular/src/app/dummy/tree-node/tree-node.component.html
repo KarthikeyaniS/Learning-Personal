@@ -1,0 +1,103 @@
+<!-- <body>
+  <ul class="tree">
+    <li>
+      <details close>
+        <summary>Big Data</summary>
+        <ul>
+          <li>
+            <details>
+              <summary>Subscriptions</summary>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary>Datasets</summary>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary>Data Transfers</summary>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary>Reservations</summary>
+            </details>
+          </li>
+        </ul>
+      </details>
+    </li>
+    <li>
+      <details close>
+        <summary>Databases</summary>
+      </details>
+    </li>
+    <li>
+      <details close>
+        <summary>Networking</summary>
+      </details>
+    </li>
+    <li>
+      <details close>
+        <summary>Identity</summary>
+      </details>
+    </li>
+  </ul>
+</body> -->
+
+<!-- <ul class="tree p-l-sm">
+  <li ng-repeat="(k, v) in cmdbConfigObj.resourceData track by $index" class="pdl-null"
+    repeat-finish-event="selectResource()">
+    <details>
+      <summary id="{{k}}" ng-class="{'blue-txt': cmdbConfigObj.filters.selCtg == k}">{{k}}
+      </summary>
+      <ul>
+        <li ng-repeat="(sk, sv) in v track by $index">
+          <details>
+            <summary id="{{sk}}" ng-class="{'blue-txt': cmdbConfigObj.filters.selType == sk}"> {{sk}}
+            </summary>
+            <ul>
+              <li id="{{ssv}}" ng-repeat="(ssk, ssv) in sv track by $index" ng-click="switchResource(k, sk, ssv)"> <a
+                  class="text-black" ng-class="{'bold item-selected': cmdbConfigObj.filters.selRes == ssv}">{{ssv}}</a>
+              </li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+    </details>
+  </li>
+</ul> -->
+
+<ul class="tree">
+  <li *ngFor="let i of treeData">
+    <details>
+      <summary><input type="checkbox">
+        {{i.name}}
+      </summary>
+      <ul>
+        <li *ngFor="let child of i.children">
+          <details>
+            <summary><input type="checkbox">{{child.name}}</summary>
+            <ul>
+              <li *ngFor="let gc of child.grandChild;let j = index">
+                <summary>
+                  <input type="checkbox">{{gc.name}}
+                </summary>
+                <!-- <ul>
+                  <li *ngFor="let lvl3 of gc.level3">
+                    <details>
+                    <summary>{{lvl3.name}}</summary>
+                  </details>
+                  </li>
+                </ul>  -->
+              </li>
+            </ul>
+          </details>
+        </li>
+
+      </ul>
+    </details>
+  </li>
+
+</ul>
+

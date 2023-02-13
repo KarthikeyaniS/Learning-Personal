@@ -14,6 +14,7 @@ export class AddStudentComponent implements OnInit {
 
   addStudent = new FormGroup(
     {
+      id:new FormControl(''),
       name: new FormControl(''),
       email: new FormControl(''),
     }
@@ -27,6 +28,8 @@ export class AddStudentComponent implements OnInit {
   saveData() {
     // console.log(this.addStudent.value);
     this.student.saveStudentData(this.addStudent.value).subscribe((data) => {
+      console.log("werftghjhgf");
+      
       console.log(data);
       this.alert = true;
 

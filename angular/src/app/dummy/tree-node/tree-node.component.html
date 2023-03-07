@@ -69,27 +69,49 @@
 </ul> -->
 
 <ul class="tree">
-  <li *ngFor="let i of treeData">
+  <li *ngFor="let i of treeData ">
     <details>
-      <summary><input type="checkbox">
+      <summary>
+        <input type="checkbox" (change)="checkboxTrigger($event ,treeData,i)" [checked]="i.checked">
         {{i.name}}
       </summary>
       <ul>
         <li *ngFor="let child of i.children">
           <details>
-            <summary><input type="checkbox">{{child.name}}</summary>
+            <summary>
+              <input type="checkbox" (change)="checkboxTrigger($event, treeData,i)" [checked]="child.checked">
+              {{child.name}}
+            </summary>
             <ul>
               <li *ngFor="let gc of child.grandChild;let j = index">
-                <summary>
-                  <input type="checkbox">{{gc.name}}
-                </summary>
-                <!-- <ul>
-                  <li *ngFor="let lvl3 of gc.level3">
-                    <details>
-                    <summary>{{lvl3.name}}</summary>
-                  </details>
-                  </li>
-                </ul>  -->
+                <details>
+                  <summary>
+                    <input type="checkbox" (change)="checkboxTrigger($event,child.grandChild,child )" [checked]="gc.checked">
+                    {{gc.name}}
+                  </summary>
+                  <ul>
+                    <li *ngFor="let lvl3 of gc.level3">
+                      <details>
+                        <summary>
+                          <input type="checkbox" (change)="checkboxTrigger($event ,gc.level3,gc)"
+                            [checked]="lvl3.checked">
+                          {{lvl3.name}}
+                        </summary>
+                        <ul>
+                          <li *ngFor="let lvl4 of lvl3.level4">
+                            <details>
+                              <summary>
+                                <input type="checkbox" (change)="checkboxTrigger($event ,lvl3.level4,lvl3)"
+                                  [checked]="lvl4.checked">
+                                {{lvl4.name}}
+                              </summary>
+                            </details>
+                          </li>
+                        </ul>
+                      </details>
+                    </li>
+                  </ul>
+                </details>
               </li>
             </ul>
           </details>
@@ -100,4 +122,3 @@
   </li>
 
 </ul>
-

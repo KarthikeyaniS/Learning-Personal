@@ -1,0 +1,107 @@
+
+
+IDE - Intergrated Developement Environment 
+   used to run and compile the source code we are writing
+
+
+   
+ format:
+
+     -- class name always should start with capital letter
+     -- no space
+          ex: ClassName MainClass DevilKk
+  
+ public class Main{                                --> class name (not a function)
+    public static void main(String args[]){           --> return type  (should have the type static and return type(string args[]))
+        
+    }
+ }
+
+ public class Main{
+    public static void main(String args[]){
+        int a=6;
+        a=89;
+        System.out.println(a);   // 89
+        // print ln will take whole link to print its data 
+    
+       float f=4.343f;    // while using float we need to mention 'f' after the value
+       System.out.print(f);
+
+         long l= 509876789l;  //should end with l
+       double d= 5;
+          System.out.println(d);  //5.0
+          int k = (int)5.3;
+        System.out.println(k);  //5
+    }
+}
+
+
+
+//new cource   WORA - write once run Anywhere
+
+jvm will run top of OS.
+ JVM  - java virtual mechine 
+
+ JRE - java runtime mechine (jvm will be inside JRE)           JDK > JRE > JVM  (if we have the source code we can run anywhere without JDK but JVM and JRE needed)
+
+java is plateform independent but jvm is platform dependence 
+
+jvm only understand byte code
+
+code --> compiler --> byte code --> will run in jvm
+ .java     javaC       .class
+
+excution will be starts from main  -->    public static main
+                                  will take parameter    (String args[]) or a[]
+
+                           before main we need to give class name 
+
+  public class Main{                               
+    public static void main(String args[]){           
+         System.out.println("hello world");
+    }
+ }
+
+     --> after executing the code complier will create filename.class
+         fnmae.class is a byte code(complier will convert source code into byte code so the jvm can understand)
+
+
+
+
+
+
+
+
+
+
+  type convertion and type casting
+      
+      int b=6;
+      float c=89.5f;
+
+      b=c or c=b  --> type convertion 
+
+
+
+   int b = 2098;
+        byte k = (byte) b;   -> int to float     --> casting 
+        
+       System.out.println(k);
+
+
+
+  // relational operators
+
+  == , != , < , > , <= , >=
+
+  int b = 100;
+  int c= 101;
+   boolean k= b > c;   //false
+
+ // logical operator:
+  &, |, !
+
+   boolean k= b < c && d < e;  // can use & , |  
+
+      
+

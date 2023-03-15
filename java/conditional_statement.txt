@@ -1,0 +1,33 @@
+
+
+// conditional statements
+
+   // If Else
+
+  if the  condition true means -> execute something
+              else  -> some other output
+
+
+ // Ternary operator
+
+     result= n % 2 ==0 ? 10 :20; 
+         if true means 10 else 20
+// switch case
+  
+   int c= 1;
+                                                   // output is "one"
+       switch(c){
+           case 1:
+               System.out.println("one");
+               break;
+        case 2:
+               System.out.println("two");
+               break;
+       }
+
+
+// loops
+
+   // for loop
+   // while           --> to read a file or dictionary do while is a best approach
+   // do while

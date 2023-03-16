@@ -1,0 +1,5 @@
+
+
+stack and heap 
+
+every method will be having a stack

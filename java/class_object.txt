@@ -29,3 +29,33 @@ public class Main{
    
     }
 }
+
+
+// methods
+
+
+class Musicplaying
+{
+    public void method(){
+        System.out.println("music playing...");
+    }
+    public String methods(int cost){
+        if(cost>=10)
+           return "pen";
+        else
+           return "nothing u will get for this price";
+    }
+}
+
+public class Main{
+    public static void main(String args[]){
+         Musicplaying mp = new Musicplaying();
+         mp.method();                                // music playing...
+         String str=mp.methods(8);
+         System.out.println(str);                   // less than 10 means (nothing u will get)   greater than 10(pen)
+   
+    }
+}
+
+    ** if u r returning something u need to store the value and have to print . 
+      if its a void method it will print the value automatically

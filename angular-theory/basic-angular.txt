@@ -1,0 +1,44 @@
+index.html will run first and from there we are calling app-root component 
+
+in angular.json file
+    all dependencies packages which is needed for angular app will imported there dynamically like ( common, compiler, core, forms , plateform-browser , routers )
+    and dowlonded dependencies also imported there (highcharts, material, bootstrap,json-server)
+
+    in devDependencies ,
+        all packages which is required for development and compilation will be added there 
+          ex. angular-devkit , angular-cli, jasmine-core,karma,typescript packages
+
+
+
+
+[(ngModal)] - will capture and store the entered value 
+    we can bind the value using {{}} - curly braces
+
+
+
+// DataBinding:
+
+1. String interpolation  {{}}
+2. Property Binding [property]="data"
+3. Event-Binding   (click)="method($event)"
+4. Two-way data biding   [(ngModal)]="data"
+
+
+// DOM-Document Object Modal
+
+     HTML is used to structure the web pages and Javascript is used to add behavior to our web pages.
+    When an HTML file is loaded into the browser, the javascript can not understand the HTML document directly.
+     So, a corresponding document is created(DOM). DOM is basically the representation of the same HTML document but in a different format with the use of objects.
+        ex: objects (h1, p, etc) 
+
+// Directive
+
+  1. ngIf - Strurural Directive
+
+     <p *ngIf="condition1; else cond2">kjhgfhj</p>
+     <ng-template #cond2>
+        <p>kjhgfdghjk</p>
+     </ng-template>
+
+  2. [ngStyle]="{'backgroungColor': 'offline' ? 'red': 'green'}"
+  3. [ngClass]= "{classname: condition==='value'}"   

@@ -1,0 +1,31 @@
+
+
+when the obj is created , if we didn't assign a value for obj.value default value will be 0
+we can assign a value to the obj using Constructor
+
+// Constructor
+
+    Constructor name should be same as ClassName
+    it doesn't retrun anything 
+    Constructor is nothing but a like method 
+    during every obj creation , Constructor will be called (no need to call the Constructor manually)
+
+
+   // default Constructor
+     default Constructor will take the input(variable) from inside the constructor
+
+     Human obj= new Human();
+         public Human(){
+            int age=12;
+            String name= "devil";
+         }
+
+
+   // parameterized Constructor
+
+       in parameterized constructor, inside the class name itself we can pass value of variable
+        Human obj= new Human(18,"chaithu");
+        public Human(int a, String b){
+          age=a;
+          name=b;
+         }

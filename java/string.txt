@@ -1,0 +1,36 @@
+// string - by default string is immutable
+
+
+string is a class
+
+ String name = "karthi";
+	  System.out.println(name);   //karthi
+	  
+	  //string is a class 
+	  String n1 = new String("chaithu");
+	  System.out.println(n1);   // chaithu
+
+       System.out.println(n1.charAt(1));  // h  - chaithu
+	    System.out.println(n1.concat("kutty"));  // chaithukutty
+
+
+	  n1 = n1 + " kutty";   // it wont change the n1 value instead of that its combaining  another string with n1
+	  System.out.println(n1);  // chaithu kutty
+
+
+
+ // mutable string - can be changed
+	  
+	  StringBuffer k = new StringBuffer("devilkk");
+	  System.out.println(k.capacity());  //initially capcacity will be 16 after adding devilkk it will be 16+7
+
+
+// static variable
+
+   static variables or shared by diff objects  (somewhere in jvm all static values will be stored)
+   --> static variable should be call with class name 
+	  
+
+
+        
+this keyword - >  refers the current obj which is called by 
